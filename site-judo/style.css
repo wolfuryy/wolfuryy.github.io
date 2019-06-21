@@ -1,0 +1,98 @@
+body
+{
+  background :url("image_de_fond.png") no-repeat fixed;
+}
+
+p
+{
+  font-family: Verdana,"Trebuchet MS",Arial,serif;
+
+}
+
+ul.navbar li
+{
+  background: #CECECE;
+  margin-right: ;
+  padding: 0.3em;
+  border-right: 1px solid black;
+}
+
+ul.navbar li:last-child
+{
+  border-right: 0;
+}
+
+ul.navbar a
+{
+  text-decoration: none;
+}
+.navbar
+{
+  display: flex;
+  justify-content: center;
+}
+
+h1
+{
+  font-family: Verdana,"Trebuchet MS",Arial,serif;
+  display: flex;
+  justify-content: center;
+}
+h2
+{
+  font-family: Verdana,"Trebuchet MS",Arial,serif;
+  display: flex;
+  justify-content: center;
+}
+
+article
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1E7FCB;
+  width: 700px;
+  margin-width:720;
+  margin: auto;
+  border:5px ;
+  border-color: grey;
+}
+header
+{
+  background: grey;
+  padding: 20px;
+}
+body.sportifs
+{
+  background-color: #FEFDF0;
+  background-image: none;
+}
+/*div:hover
+{
+  zoom:140%;
+}*/
+
+div
+{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  width:250px;
+  margin-right: 80px;
+}
+section
+{
+  margin-left:500px;
+}
+
+/*img:hover
+{
+    border-radius: 25%;
+
+}*/
+body.plus-moins
+{
+  background-image: none;
+   background-color: #FEFDF0;
+}

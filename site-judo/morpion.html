@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jeu du plus ou morpion</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      * { padding: 0; margin: 0; }
+      canvas { background: #eee; display: block; margin: 0 auto; }
+    </style>
+</head>
+<body class="plus-moins">
+
+  <header>
+   <h1>Jeu du Morpion</h1>
+  </header>
+
+  <nav>
+    <ul class="navbar">
+      <li><a href="index.html">le judo</a></li>
+      <li><a href="pageCodeMoral.html">le code moral</a></li>
+      <li><a href="pageOrdreDesCeintures.html">l'ordre des ceintures</a></li>
+      <li><a href="sportifs.php">les sportifs</a></li>
+    </ul>
+  </nav>
+  <canvas id="myCanvas" width="460" height="320"></canvas>
+<script type="text/javascript">
+
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+var paddleHeight = 10;
+var paddleWidth = 460;
+var paddleX = (canvas.width-paddleWidth)/2;
+var paddleY = (canvas.height-paddleHeight)/60;
+
+
+
+  function drawGameCard1() {
+  ctx.beginPath();
+  ctx.rect(paddleX, canvas.height/3, paddleWidth, paddleHeight);
+  ctx.fillStyle = "teal";
+  ctx.fill();
+  ctx.closePath();
+}
+  function drawGameCard2() {
+  ctx.beginPath();
+  ctx.rect(paddleX, canvas.height/1.5, paddleWidth, paddleHeight);
+  ctx.fillStyle = "teal";
+  ctx.fill();
+  ctx.closePath();
+}
+  function drawGameCard3() {
+  ctx.beginPath();
+  ctx.rect(canvas.width/3, paddleY, paddleHeight, paddleWidth);
+  ctx.fillStyle = "teal";
+  ctx.fill();
+  ctx.closePath();
+}
+  function drawGameCard4() {
+  ctx.beginPath();
+  ctx.rect(canvas.width/1.5, paddleY, paddleHeight, paddleWidth);
+  ctx.fillStyle = "teal";
+  ctx.fill();
+  ctx.closePath();
+}
+function draw() {
+drawGameCard1()
+drawGameCard2()
+drawGameCard3()
+drawGameCard4()
+}
+
+draw();
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
